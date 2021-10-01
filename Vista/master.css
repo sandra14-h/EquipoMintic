@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(C:/Users/Laura/Documents/Proyecto_mintic/EquipoMintic/imagenes/bg.jpg) no-repeat center top;
+  background: url(../imagenes/bg.png) no-repeat center top;
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
