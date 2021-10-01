@@ -66,11 +66,12 @@ body {
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
+  
 }
 
 .login-box input[type="submit"]:hover {
   cursor: pointer;
-  background: #ffc107;
+  background: rgba(145, 186, 194, 0.24);
   color: #000;
 }
 
