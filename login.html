@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form Design One | Fazt</title>
+    <link rel="stylesheet" href="Vista/master.css">
+    
+    <script>
+      function verificar(){
+          var password=document.getElementById("username").value;
+
+          if(password.includes('@gmail'))
+          {
+            window.alert("Bienvenido usuario");
+          }
+          else{
+            window.alert("Favor ingresar un correo de gmail")
+          }          
+      }
+    </script>
+  </head>
+  <body>
+    <div class="login-box">
+      <img src="imagenes/logo.png" class="avatar" alt="Avatar Image">
+      <h1>Welcome</h1>
+      <form>
+        <p>
+        <!-- USERNAME INPUT -->
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter @gmail">
+      </p>
+        <!-- PASSWORD INPUT -->
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter Password">
+        <input type="submit" value="Log In" onclick="verificar();">
+        <!--
+        <a href="#">Lost your Password?</a><br>
+        <a href="#">Don't have An account?</a>
+        -->
+      </form>
+    </div>
+  </body>
+</html>
