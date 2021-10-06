@@ -20,6 +20,28 @@ body {
   padding: 70px 30px;
 }
 
+.edit-box {
+  width: 320px;
+  height: 450px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+
+.edit-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
 .login-box .avatar {
   width: 100px;
   height: 100px;
@@ -36,7 +58,21 @@ body {
   font-size: 22px;
 }
 
+.edit-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
 .login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.edit-box label {
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -48,6 +84,21 @@ body {
   margin-bottom: 20px;
 }
 
+.edit-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.edit-box input[type="text"], .edit-box input[type="password"] , .edit-box input[type="number"]{
+  border: none;
+  border: 1px solid rgb(0, 0, 0);
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
 .login-box input[type="text"], .login-box input[type="password"] {
   border: none;
   border-bottom: 1px solid #fff;
@@ -56,6 +107,17 @@ body {
   height: 40px;
   color: #fff;
   font-size: 16px;
+}
+
+.edit-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #0fb8b083;
+  color: rgb(2, 2, 2);
+  font-size: 18px;
+  border-radius: 20px;
+  font-weight: 800;
 }
 
 .login-box input[type="submit"] {
@@ -69,17 +131,38 @@ body {
   
 }
 
+.edit-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgba(145, 186, 194, 0.24);
+  color: #000;
+}
+
 .login-box input[type="submit"]:hover {
   cursor: pointer;
   background: rgba(145, 186, 194, 0.24);
   color: #000;
 }
 
+.edit-box a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: rgba(0, 255, 255, 0.473);
+  padding: 5%;
+  border-radius: 20px;
+}
+
 .login-box a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
-  color: darkgrey;
+  color: rgb(255, 255, 255);
+}
+
+.edit-box a:hover {
+  color: #fff;
 }
 
 .login-box a:hover {
