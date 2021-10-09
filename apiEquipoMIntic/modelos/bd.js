@@ -2,7 +2,7 @@
 var mysql = require("mysql");
 
 //cargar archivo de configuracion
-var confugBD = require("../configuracion/bd.config");
+var configBD = require("../configuracion/bd.config");
 
 //crear la conexion
 var conexion = mysql.createConnection({

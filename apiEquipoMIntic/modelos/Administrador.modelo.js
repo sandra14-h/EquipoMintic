@@ -1,5 +1,5 @@
 //Cargar la libreria con la conexion a la base de datos
-var sql = require("./bd");
+var sql = require("../modelos/bd");
 
 //Constructor
 var Administrador = function (administrador) {
@@ -10,8 +10,7 @@ var Administrador = function (administrador) {
     this.celular = administrador.Celular;
 }
 Administrador.obtener = (idadministrador, resultado) => {
-    sql.query(`SELECT * FROM administrador WHERE id=${idadministrador};`, (err, res)
-        => {
+    sql.query(`SELECT * FROM administrador WHERE id=${idadministrador};`, (err, res)=>{
         //verificar si hubo error ejecutando la consulta
         if (err) {
             console.log("Error consultando administrardor:", err);
